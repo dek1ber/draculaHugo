@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang={{ .Site.LanguageCode }}>
+  {{ partial "head.html" . }}
+<body>
+	<div class="container">
+    {{ partial "header.html" . }}
+
+		{{ with .Content }}{{ . }}{{ end }}
+
+    <p style="font-size: 22px"> Making the word free actually mean something </p>
+
+		<div class="recent">
+      <h2> Recent Podcasts </h2>
+      <h2> Recent Posts </h2>
+
+			<div class="posts">
+				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+				{{ range $paginator.Pages }}
+
+				<div class="post">
+					<div class="post-metadata">{{ dateFormat "Jan 2, 2006" .Date }}</div>
+					<a class="post-title" href="{{ .RelPermalink }}">{{.Title}}</a> &mdash;
+					<span class="post-description">
+						{{ if isset .Params "description" }}
+						{{ .Description }}
+						{{ else }}
+						{{ .Summary }}&hellip;
+						{{ end }}
+					</span>
+				</div>
+
+				{{ end }}
+				{{ template "partials/paginator.html" . }}
+			</div>
+		</div>
+	{{ partial "footer.html" . }}
+	</div>
+</body>
+</html>

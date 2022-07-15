@@ -1,0 +1,56 @@
+baseURL = "http://example.com"
+languageCode = "en-us"
+title = "Example"
+theme = "draculaHugo"
+paginate = 6
+
+copyright = "© Copyright notice"
+
+summaryLength = 2
+
+[params]
+	subtitle = "Example Subtitle"
+  mainSections = ["posts"]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Software"
+url = "/software"
+weight = 4
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 5
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/dek1ber"
+
+[[params.social]]
+name = "YouTube"
+icon = "youtube"
+url = "youtube"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"

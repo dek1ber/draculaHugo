@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang={{ .Site.LanguageCode }}>
+{{ partial "head.html" . }}
+<body>
+    <div class="container">
+		{{ partial "header.html" . }}
+
+		<div class="post-header">
+			<h1 class="title">{{ .Title }}</h1>
+			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+		</div>
+
+		<div class="markdown">
+			{{ .Content }}
+		</div>
+
+		<div class="post-tags">
+			{{ if ne .Type "page" }}
+				{{ if gt .Params.tags 0 }}
+					<nav class="nav tags">
+							<ul class="flat">
+								{{ range .Params.tags }}
+								<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+								{{ end }}
+							</ul>
+					</nav>
+				{{ end }}
+			{{ end }}
+		</div>
+      {{ partial "footer.html" . }}
+	</div>
+</body>
+</html>

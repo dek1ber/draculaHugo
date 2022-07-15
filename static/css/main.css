@@ -1,0 +1,161 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+:root {
+  --bg: #282a36;
+  --fg: #f8f8f2;
+  --cl: #44475a;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+body {
+    font-family: 'Ubuntu';
+    background-color: var(--bg);
+    color: var(--fg);
+    line-height: 1.3;
+}
+
+.menu {
+  border-top: 1px solid #f8f8f2;
+}
+
+ul {
+  padding-left: 15px;
+  list-style: disc inside;
+}
+
+nav ul.flat li {
+    margin-right: 10px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+ul.flat {
+  margin: 0;
+  padding: 0;
+}
+
+ul.flat li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+}
+
+.recent {
+  .max-width: 900px !important;
+  margin: 0 auto;
+
+}
+
+.posts .post {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.post-metadata {
+  font-size: 0.75rem;
+  color: var(--fg);
+}
+
+.post-title {
+  color: var(--green);
+}
+
+
+.post-description {
+  font-size: 70%;
+}
+
+.title {
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--fg);
+}
+
+a:hover {
+    color: var(--green);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: .9rem;
+}
+
+.footer{
+  text-align: right;
+}
+
+.site-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-description {
+    padding: 0px;
+    margin-top: 5px;
+    color: var(--fg);
+}
+
+
+header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.top .site-description nav {
+    margin: 0;
+    padding: 0;
+    border: none;
+    min-width: 50px;
+    margin-left: 15px;
+}
+
+.top .site-description nav ul svg {
+    max-height: 15px;
+}
+
+.site-title {
+    margin-bottom: 0cm;
+}
+
+.social {
+
+}

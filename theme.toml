@@ -1,0 +1,19 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "dek1ber"
+license = "MIT"
+licenselink = "https://github.com/dek1ber"
+description = "Dracula Hugo Theme"
+homepage = "https://tbd.com"
+tags = ["minimal", "clean", "blog", "responsive", "personal", "simple", "minimalist", "portfolio", "dark"]
+features = ["blog", "Clean and minimal", "Responsive", "Social media links", "Syntax highlighting"]
+min_version = "0.37.0"
+
+[original]
+  name = "Vivek R"
+  homepage = "https://vivekr.net"
+
+[author]
+  name = "dek1ber"
+  homepage = "https://tbd.com"
