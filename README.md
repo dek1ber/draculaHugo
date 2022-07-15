@@ -76,7 +76,7 @@ weight = 4
 [[params.social]]
 name = "Github"
 icon = "github"
-url = "https://github.com/vividvilla/ezhil"
+url = "https://github.com/dek1ber/draculaHugo"
 
 [[params.social]]
 name = "Twitter"
